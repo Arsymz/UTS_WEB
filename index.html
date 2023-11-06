@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman Utama</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat datang di Kafe Review</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cafes.html">Daftar Kafe</a></li>
+                <li><a href="profile.html">Profil</a></li>
+            </ul>
+        </nav>
+    </header >
+    <section class="cafe">
+        <h2>Kafe ADAPADA KEDAI</h2>
+        <img src="cafe1.jpg" alt="Foto Kafe">
+        <div class="details">
+            <p><strong>Lokasi:</strong> Jl. Sultan Alauddin No.98, Pa'baeng-Baeng, Kec. Tamalate, Kota Makassar, Sulawesi Selatan</p>
+            <p><strong>Menu:</strong></p>
+            <ul>
+                <li>Cappuccino - Rp 18,000</li>
+                <li>Espresso - Rp 15,000</li>
+                <li>Latte - Rp 27,000</li>
+                <li>Mocha - Rp 22,000</li>
+            </ul>
+        </div>
+        <div class="rating">
+            <span class="star" onclick="rate(1)">&#9733;</span>
+            <span class="star" onclick="rate(2)">&#9733;</span>
+            <span class="star" onclick="rate(3)">&#9733;</span>
+            <span class="star" onclick="rate(4)">&#9733;</span>
+            <span class="star" onclick="rate(5)">&#9733;</span>
+        </div>
+    </section>
+    <section class="review-form">
+        <h2>Kafe ADAPADA KEDAI</h2>
+        <form id="reviewForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="rating">Penilaian (1-5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+            <br>
+            <label for="review">Ulasan:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+            <br>
+            <button type="submit">Kirim Ulasan</button>
+        </form>
+           <div class="frame">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63578.585291385796!2d119.3997193491968!3d-5.158038723669682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf1d6001430111%3A0xfbe694c3e93a23b2!2sADAPADA%20KEDAI!5e0!3m2!1sid!2sid!4v1699175077134!5m2!1sid!2sid" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <section class="cafe">
+        <h2>Kafe Red Corner Cafe</h2>
+        <img src="cafe2.jpg" alt="Foto Kafe">
+        <div class="details">
+            <p><strong>Lokasi:</strong> Jl. Yusuf Daeng Ngawing, Tidung, Kec. Rappocini, Kota Makassar, Sulawesi Selatan</p>
+            <p><strong>Menu:</strong></p>
+            <ul>
+                <li>Cappuccino - Rp 20,000</li>
+                <li>Espresso - Rp 15,000</li>
+                <li>Latte - Rp 25,000</li>
+                <li>Mocha - Rp 22,000</li>
+            </ul>
+        </div>
+        <div class="rating">
+            <span class="star" onclick="rate(1)">&#9733;</span>
+            <span class="star" onclick="rate(2)">&#9733;</span>
+            <span class="star" onclick="rate(3)">&#9733;</span>
+            <span class="star" onclick="rate(4)">&#9733;</span>
+            <span class="star" onclick="rate(5)">&#9733;</span>
+        </div>
+    </section>
+    <section class="review-form">
+        <h2>Kafe Red Corner Cafe</h2>
+        <form id="reviewForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="rating">Penilaian (1-5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+            <br>
+            <label for="review">Ulasan:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+            <br>
+            <button type="submit">Kirim Ulasan</button>
+        </form>
+            <div class="frame">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63578.585291385796!2d119.3997193491968!3d-5.158038723669682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee293a8a03b85%3A0x2693ca87ce6a070f!2sRed%20Corner%20Cafe!5e0!3m2!1sid!2sid!4v1699175313622!5m2!1sid!2sid" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <section class="cafe">
+        <h2>Kafe Maark Trest</h2>
+        <img src="cafe3.png" alt="Foto Kafe">
+        <div class="details">
+            <p><strong>Lokasi:</strong> Jl. Gn. Batu Putih No.2, Mangkura, Kec. Ujung Pandang, Kota Makassar, Sulawesi Selatan</p>
+            <p><strong>Menu:</strong></p>
+            <ul>
+                <li>Cappuccino - Rp 12,000</li>
+                <li>Espresso - Rp 10,000</li>
+                <li>Latte - Rp 20,000</li>
+                <li>Mocha - Rp 22,000</li>
+            </ul>
+        </div>
+        <div class="rating">
+            <span class="star" onclick="rate(1)">&#9733;</span>
+            <span class="star" onclick="rate(2)">&#9733;</span>
+            <span class="star" onclick="rate(3)">&#9733;</span>
+            <span class="star" onclick="rate(4)">&#9733;</span>
+            <span class="star" onclick="rate(5)">&#9733;</span>
+        </div>
+    </section>
+    <section class="review-form">
+        <h2>Ulasan untuk Kafe Maark Trest</h2>
+        <form id="reviewForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="rating">Penilaian (1-5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+            <br>
+            <label for="review">Ulasan:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+            <br>
+            <button type="submit">Kirim Ulasan</button>
+        </form>
+            <div class="frame">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63578.585291385796!2d119.3997193491968!3d-5.158038723669682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf1d5675e083cb%3A0x552643a9594070f4!2sMark%20Trees%20Cafe!5e0!3m2!1sid!2sid!4v1699175488895!5m2!1sid!2sid" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <section class="cafe">
+        <h2>Kafe London</h2>
+        <img src="cafe4.jpg" alt="Foto Kafe">
+        <div class="details">
+            <p><strong>Lokasi:</strong> Satu Gedung Dengan Princess Syahrini, Rappocini, Jl. Sultan Alauddin No.240, Mangasa, Kec. Tamalate, Kota Makassar, Sulawesi Selatan</p>
+            <p><strong>Menu:</strong></p>
+            <ul>
+                <li>Cappuccino - Rp 10,000</li>
+                <li>Espresso - Rp 15,000</li>
+                <li>Latte - Rp 23,000</li>
+                <li>Mocha - Rp 25,000</li>
+            </ul>
+        </div>
+        <div class="rating">
+            <span class="star" onclick="rate(1)">&#9733;</span>
+            <span class="star" onclick="rate(2)">&#9733;</span>
+            <span class="star" onclick="rate(3)">&#9733;</span>
+            <span class="star" onclick="rate(4)">&#9733;</span>
+            <span class="star" onclick="rate(5)">&#9733;</span>
+        </div>
+    </section>
+    <section class="review-form">
+        <h2>Ulasan untuk Kafe London</h2>
+        <form id="reviewForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="rating">Penilaian (1-5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+            <br>
+            <label for="review">Ulasan:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+            <br>
+            <button type="submit">Kirim Ulasan</button>
+        </form>
+          <div class="frame">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63578.585291385796!2d119.3997193491968!3d-5.158038723669682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee2678e547ab3%3A0x5f33f8429fa999b7!2sLondon%20Cafe!5e0!3m2!1sid!2sid!4v1699175567282!5m2!1sid!2sid" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+        <section class="cafe">
+        <h2>Loby Cafe & Resto</h2>
+        <img src="cafe5.jpg" alt="Foto Kafe">
+        <div class="details">
+            <p><strong>Lokasi:</strong> Jl. Aroeppala No.48, Gn. Sari, Kec. Rappocini, Kota Makassar, Sulawesi Selatan</p>
+            <p><strong>Menu:</strong></p>
+            <ul>
+                <li>Cappuccino - Rp 22,000</li>
+                <li>Espresso - Rp 14,000</li>
+                <li>Latte - Rp 27,000</li>
+                <li>Mocha - Rp 23,000</li>
+            </ul>
+        </div>
+        <div class="rating">
+            <span class="star" onclick="rate(1)">&#9733;</span>
+            <span class="star" onclick="rate(2)">&#9733;</span>
+            <span class="star" onclick="rate(3)">&#9733;</span>
+            <span class="star" onclick="rate(4)">&#9733;</span>
+            <span class="star" onclick="rate(5)">&#9733;</span>
+        </div>
+    </section>
+    <section class="review-form">
+        <h2>Ulasan untuk Loby Cafe & Resto </h2>
+        <form id="reviewForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="rating">Penilaian (1-5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+            <br>
+            <label for="review">Ulasan:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+            <br>
+            <button type="submit">Kirim Ulasan</button>
+        </form>
+         <div class="frame">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63578.585291385796!2d119.3997193491968!3d-5.158038723669682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee2559097fe3f%3A0x4781ed94f7f660f7!2sLobby%20Cafe%20%26%20Resto!5e0!3m2!1sid!2sid!4v1699175762648!5m2!1sid!2sid" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+        <section class="cafe">
+        <h2>Kafe Zona Cafe</h2>
+        <img src="cafe6.png" alt="Foto Kafe">
+        <div class="details">
+            <p><strong>Lokasi:</strong> Jl. Ujung Pandang No.2, Bulo Gading, Kec. Ujung Pandang, Kota Makassar, Sulawesi Selatan </p>
+            <p><strong>Menu:</strong></p>
+            <ul>
+                <li>Cappuccino - Rp 28,000</li>
+                <li>Espresso - Rp 15,000</li>
+                <li>Latte - Rp 28,000</li>
+                <li>Mocha - Rp 22,000</li>
+            </ul>
+        </div>
+        <div class="rating">
+            <span class="star" onclick="rate(1)">&#9733;</span>
+            <span class="star" onclick="rate(2)">&#9733;</span>
+            <span class="star" onclick="rate(3)">&#9733;</span>
+            <span class="star" onclick="rate(4)">&#9733;</span>
+            <span class="star" onclick="rate(5)">&#9733;</span>
+        </div>
+    </section>
+    <section class="review-form">
+        <h2>Ulasan untuk Kafe Zona Cafe</h2>
+        <form id="reviewForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="rating">Penilaian (1-5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+            <br>
+            <label for="review">Ulasan:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+            <br>
+            <button type="submit">Kirim Ulasan</button>
+        </form>
+        <div class="frame">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63580.78482447235!2d119.3286468486328!3d-5.136033299999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf02b013663743%3A0xfbe11b7de6890173!2sZona%20Cafe!5e0!3m2!1sid!2sid!4v1699175819266!5m2!1sid!2sid" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
